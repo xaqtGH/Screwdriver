@@ -47,7 +47,7 @@ void *console_thread(void *arg) {
 		} else if (strncmp(line, "clear", 5) == 0) {
 			printf("\033[H\033[J");
 		} else if (strncmp(line, "help", 4) == 0) {
-			puts("Commands: exit, fps <n>, clear, help");
+			puts("Commands: exit, fps <n>, clear, help"); // print available commands
 		} else {
 			printf("Unknown command: %s", line);
 		}
